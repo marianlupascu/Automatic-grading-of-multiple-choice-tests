@@ -1,0 +1,96 @@
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{stata}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{fancyvrb} % size font inside verbatim environment
+\newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
+\usepackage{siunitx}
+\usepackage{blkarray} % show matrices with letters at borders
+\usepackage{hyperref}
+\usepackage{soul}
+\usepackage{titling} % drop vertical space before the title
+\sethlcolor{lightgray}
+\setlength{\columnsep}{1cm}
+
+\usepackage{listings,lstautogobble}
+\lstset{ 
+  language=R,                     % the language of the code
+  basicstyle=\scriptsize\ttfamily, % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{Blue},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it is 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{RoyalBlue},      % keyword style
+  commentstyle=\color{YellowGreen},   % comment style
+  stringstyle=\color{ForestGreen}      % string literal style
+} 
+
+
+
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+%% inline-code
+\newcommand{\code}[1]{\hl{\texttt{#1}}}
+
+% DECLARE PLIM operator
+\DeclareMathOperator*{\plim}{plim}
+% DECLARE AVar operator
+\DeclareMathOperator*{\avar}{AVar}
+% DECLARE Covariance operator
+\DeclareMathOperator*{\Cov}{Cov}
+% DECLARE Expectation operator
+\DeclareMathOperator{\E}{\mathrm{E}}
+% DECLARE Integers numbers set symbol
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+% DECLARE Real numbers set symbol
+\DeclareMathOperator{\R}{\mathbb{R}}
+% DECLARE Variance (3 letters) operator
+\DeclareMathOperator{\Var}{\mathrm{Var}}
+% DECLARE Asymptotic variance operator
+\DeclareMathOperator{\Avar}{\mathrm{Avar}}
+% DECLARE Variance (1 letter) operator
+\DeclareMathOperator{\V}{\mathrm{V}}
+% DECLARE Correlation operator
+\DeclareMathOperator{\Corr}{\mathrm{Corr}}
+% DECLARE Trace operator
+\DeclareMathOperator{\tr}{\mathrm{tr}}
+% DECLARE Normal distribution symbol
+\DeclareMathOperator{\N}{\mathcal{N}}
+% DECLARE Big O operator 
+\DeclareMathOperator{\Op}{\mathcal{O}}
+% DECLARE little o operator 
+\DeclareMathOperator{\op}{\mathrm{o}}
+% DECLARE Rank operator
+\DeclareMathOperator{\rank}{rank}
+% DECLARE Lagrange function letter
+\DeclareMathOperator{\La}{\mathcal{L}}

@@ -1,0 +1,9 @@
+16
+1 white
+9 red
+1 blue
+1 pink
+1 dark_green
+1 brown
+1 yellow
+1 black
